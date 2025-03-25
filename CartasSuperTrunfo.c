@@ -12,7 +12,7 @@ int main (){
     char codigo[2];
     char estado[16];
     char cidade[20];
-    int populacao;
+    float populacao;
     float area;
     float pib;
     int pontos_turisticos;
@@ -28,7 +28,7 @@ int main (){
     scanf("%s" , &cidade);
 
     printf("Agora digite a população da sua primeria carta: ");
-    scanf("%d" , &populacao);
+    scanf("%f" , &populacao);
 
     printf("Digite a área da sua primeira carta em km²: ");
     scanf("%f" , &area);
@@ -44,16 +44,16 @@ int main (){
     printf("Estado: %s\n" , estado);         
     printf("Código: %s\n" , codigo);
     printf("Cidade: %s\n" , cidade);
-    printf("População: %d\n" , populacao);
-    printf("Área: %f km²\n" , area);
-    printf("PIB: %f\n" , pib);
+    printf("População: %.2f\n" , populacao);
+    printf("Área: %.2f km²\n" , area);
+    printf("PIB: %.2f\n" , pib);
     printf("Pontos turísticos: %d\n" , pontos_turisticos);
 
     //Criando as variáveis que são solicitadas na segunda carta.
     char codigo2[2];
     char estado2[16];
     char cidade2[20];
-    int populacao2;
+    float populacao2;
     float area2;
     float pib2;
     int pontos_turisticos2;
@@ -71,7 +71,7 @@ int main (){
     scanf("%s" , &cidade2);
 
     printf("Agora digite a população da sua segunda carta: ");
-    scanf("%d" , &populacao2);
+    scanf("%f" , &populacao2);
 
     printf("Digite a área da sua segunda carta em km²: ");
     scanf("%f" , &area2);
@@ -87,9 +87,9 @@ int main (){
     printf("Estado: %s\n" , estado2);         
     printf("Código: %s\n" , codigo2);
     printf("Cidade: %s\n" , cidade2);
-    printf("População: %d\n" , populacao2);
-    printf("Área: %f km²\n" , area2);
-    printf("PIB: %f\n" , pib2);
+    printf("População: %.2f\n" , populacao2);
+    printf("Área: %.2f km²\n" , area2);
+    printf("PIB: %.2f\n" , pib2);
     printf("Pontos turísticos: %d\n" , pontos_turisticos2);
 
     return 0;
